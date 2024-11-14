@@ -1,3 +1,5 @@
+#include <string>
+
 struct Card{
 string name;
 string owner;
