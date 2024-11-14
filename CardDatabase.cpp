@@ -10,12 +10,12 @@ CardDatabase()
   
 }
 
-void addCard(string name, string owner, int value){
-    Card* p = new Card;
-    p->name = name;
-    p->owner = owner;
-    p->value = value;
-    cards.push_back(p);
+void addCard(string name, string owner, int val){
+    Card* c = new Card;
+    c->name = name;
+    c->owner = owner;
+    c->value = val;
+    cards.push_back(c);
 
 }
 
