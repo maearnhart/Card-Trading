@@ -13,6 +13,7 @@ public:
   int searchName(string name);
   int searchVal(int val);
   int searchOwner(string name);
+  void displayDatabase();
 
 private:
   vector<Card> cards;
