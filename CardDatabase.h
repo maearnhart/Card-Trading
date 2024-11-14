@@ -7,7 +7,7 @@ class CardDatabase{
 public:
   CardDatabase();
   ~CardDatabase();
-  void addCard(Card* C);
+  void addCard(Card* card);
   void addCard(string name, string owner, int val); // Function Overload
   Card getCard(int n);
   int searchName(string name);
