@@ -1,19 +1,21 @@
 #include "Card.h"
 #include <vector>
 #include <map>
+#include <set>
 
 class CardDatabase{
 public:
   CardDatabase();
   ~CardDatabase();
-  void AddCard(Card C);
+  void addCard(Card C);
   Card getCard(int n);
-  int SearchName(string name);
-  int SearchVal(int val);
-  int SearchOwner(string name);
+  int searchName(string name);
+  int searchVal(int val);
+  int searchOwner(string name);
 
 private:
   vector<Card> cards;
   map<string, int> nameToSlot;
-  map<int, int> valueToSlot;
+  map<int, set<int>> valueToSlot;
+  map<string, set<int>> ownerToSlot;
 };
