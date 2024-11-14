@@ -1,4 +1,6 @@
 #include "Card.h"
+#include <vector>
+#include <map>
 
 class CardDatabase{
 public:
@@ -6,7 +8,7 @@ public:
   ~CardDatabase();
   void AddCard(Card C);
   Card getCard(int n);
-  int SearhName(string name);
+  int SearchName(string name);
   int SearchVal(int val);
   int SearchOwner(string name);
 
