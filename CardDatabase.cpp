@@ -10,7 +10,7 @@ CardDatabase()
   
 }
 
-void addCard(string name, string owner, int val){
+void addCard(string name, string owner, int val) {
     Card* c = new Card;
     c->name = name;
     c->owner = owner;
