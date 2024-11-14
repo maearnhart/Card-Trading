@@ -1,7 +1,11 @@
 #include "Card.h"
+#include <iostream>
 #include <vector>
 #include <map>
 #include <set>
+#include <string>
+
+using namespace std;
 
 class CardDatabase{
 public:
