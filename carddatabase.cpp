@@ -24,7 +24,7 @@ void addCard(Card* card) {
 }
 
 Card getCard(int n) {
-    return cards[n];
+    return Deck[n];
 }
 
 
