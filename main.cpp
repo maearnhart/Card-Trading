@@ -15,7 +15,7 @@ int main()
   cout << "Search by name: " << endl;
   cin >> test;
 
-  cout << Print(deck1.getCard(deck1.searchName(test));
+  cout << Print(deck1.getCard(deck1.searchName(test)));
   
   
   return 0;
