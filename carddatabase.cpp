@@ -23,7 +23,7 @@ void addCard(Card* card) {
     cards.push_back(card);
 }
 
-Card getCard(int n) {
+set<Card*> getCard(set<int> n) {
     return Deck[n];
 }
 
