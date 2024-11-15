@@ -23,8 +23,13 @@ void addCard(Card* card) {
     cards.push_back(card);
 }
 
-set<Card*> getCard(set<int> n) {
-    return Deck[n];
+set<Card*> getCard(set<int> cards) {
+    set<Card*> output;
+    for (auto& i: cards) {
+        output.add(deck[i]);
+    }
+
+    return output;  
 }
 
 
