@@ -14,7 +14,7 @@ public:
   void addCard(Card* card);
   void addCard(string name, string owner, int val); // Function Overload
   //Card* getCard(int n);
-  set<Card*> getCards(set<int>); // Function Overload
+  set<Card*> getCards(set<int> cards); // Function Overload
   set<int> searchName(string name);
   set<int> searchVal(int val);
   set<int> searchOwner(string name);
