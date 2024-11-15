@@ -1,6 +1,6 @@
 #include "CardDatabase.h"
 #include "Card.h"
-#include "Ui.h"
+#include "UI.h"
 #include <iostream>
 
 CardDatabase::CardDatabase(): deck(), nameToSlot(), valueToSlot(), ownerToSlot() {}
