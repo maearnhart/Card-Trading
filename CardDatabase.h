@@ -13,9 +13,9 @@ public:
   ~CardDatabase();
   void addCard(Card* card);
   void addCard(string name, string owner, int val); // Function Overload
-  Card* getCard(int n);
-  Card* getCard(set<int>); // Function Overload
-  int searchName(string name);
+  //Card* getCard(int n);
+  set<Card*> getCards(set<int>); // Function Overload
+  set<int> searchName(string name);
   set<int> searchVal(int val);
   set<int> searchOwner(string name);
   void displayDatabase();
