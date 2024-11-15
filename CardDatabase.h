@@ -21,7 +21,7 @@ public:
   void displayDatabase();
 
 private:
-  vector<Card*> cards;
+  vector<Card*> Deck;
   map<string, int> nameToSlot;
   map<int, set<int>> valueToSlot;
   map<string, set<int>> ownerToSlot;
