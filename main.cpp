@@ -5,18 +5,16 @@ using namespace std;
 int main()
 {
 
-  CardDatabase deck1;
+	CardDatabase deck;
 
-  deck1.addCard("MJ", "Mackenzie", 100);
-  deck1.addCard("Kareem", "Utsav", 100);
-  deck1.addCard("Lebron", "Michael", 100);
+	deck.addCard("Micheal Jordan", "Utsav", 3000);
+	deck.addCard("Lebron James", "Mackenzie", 2500);
+	deck.addCard("Stephen Curry", "Micheal", 2750);
+	deck.displayDatabase();
 
-  string test;
-  cout << "Search by name: " << endl;
-  cin >> test;
+	deck.displayOwner("Utsav");
+	deck.displayCards(deck.searchVal("<", 2750));
 
-  cout << Print(deck1.getCards({deck1.searchName(test)}));
-  
-  
-  return 0;
+
+	return 0;
 }
