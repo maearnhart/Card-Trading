@@ -31,4 +31,7 @@ public:
 	void displayOwner(string owner);
 	void displayCards(set<int>);
 
+	void tradeExecute(Card* c1, Card* c2); //Execute trade
+	void tradeByVal(int val, int m); //Search for possible trades within range of m
+
 };
