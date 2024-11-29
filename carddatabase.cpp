@@ -98,5 +98,25 @@ void CardDatabase::displayCards(set<int> cards) {
     UIOut("Cards", true, getCards(cards));
 }
 
+void CardDatabase::tradeExecute(Card* c1, Card* c2)
+{
+    string temp = c1->owner;
+    c1->owner = c2->owner;
+    c2->owner = temp;
+}
 
+void CardDatabase::tradeByVal(int val, int m)
+{
+    set<int> output;
+
+    auto it = valueToSlot.lower_bound(val - m);
+    while(it != valueToSlot.end() && it->first <= val + m)
+    {
+        output.insert(it->second.begin(), it->second.end());
+        it++;
+    }
+
+    return output;
+}
+    
 
